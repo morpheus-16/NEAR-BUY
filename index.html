@@ -105,7 +105,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
         <!-- Home Dashboard -->
-        <div id="homePage" class="text-center page-section py-16">
+        <div id="homePage" class="text-center page-section py-16 transition-opacity duration-300 ease-in-out">
             <div class="mb-16">
                 <h2 class="text-6xl font-bold section-header mb-6">Welcome to NearBuy Advanced</h2>
                 <p class="text-2xl text-professional mb-12 max-w-3xl mx-auto leading-relaxed">Advanced price comparison platform with analytics, user profiles, and comprehensive store management</p>
@@ -157,7 +157,7 @@
         </div>
 
         <!-- Customer Login Page -->
-        <div id="userLoginPage" class="hidden page-section py-16">
+        <div id="userLoginPage" class="hidden page-section py-16 transition-opacity duration-300 ease-in-out">
             <div class="max-w-lg mx-auto professional-card rounded-2xl p-12">
                 <div class="text-center mb-10">
                     <div class="feature-icon mx-auto mb-6">👤</div>
@@ -192,7 +192,7 @@
         </div>
 
         <!-- Admin Login Page -->
-        <div id="adminLoginPage" class="hidden page-section py-16">
+        <div id="adminLoginPage" class="hidden page-section py-16 transition-opacity duration-300 ease-in-out">
             <div class="max-w-lg mx-auto professional-card rounded-2xl p-12">
                 <div class="text-center mb-10">
                     <div class="feature-icon mx-auto mb-6">⚙️</div>
@@ -230,7 +230,7 @@
         </div>
 
         <!-- Enhanced Customer Page -->
-        <div id="customerPage" class="hidden page-section py-12">
+        <div id="customerPage" class="hidden page-section py-12 transition-opacity duration-300 ease-in-out">
             <div class="professional-card rounded-2xl p-12">
                 <div class="text-center mb-12">
                     <div class="feature-icon mx-auto mb-6">🛒</div>
@@ -301,7 +301,7 @@
         </div>
 
         <!-- User Profile Modal -->
-        <div id="userProfileModal" class="hidden fixed inset-0 modal-overlay flex items-center justify-center z-50">
+        <div id="userProfileModal" class="hidden fixed inset-0 modal-overlay flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
             <div class="bg-white rounded-xl shadow-xl p-8 max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
                 <div class="flex justify-between items-center mb-6">
                     <h3 class="text-2xl font-bold text-gray-800">👤 User Profile</h3>
@@ -315,147 +315,147 @@
         </div>
 
         <!-- User Registration Page -->
-<div id="userRegisterPage" class="hidden page-section py-16">
-    <div class="max-w-lg mx-auto professional-card rounded-2xl p-12">
-        <div class="text-center mb-10">
-            <div class="feature-icon mx-auto mb-6">👤</div>
-            <h2 class="text-4xl font-bold section-header mb-4">Create Account</h2>
-            <p class="text-professional text-lg">Join NearBuy and start smart shopping</p>
+        <div id="userRegisterPage" class="hidden page-section py-16 transition-opacity duration-300 ease-in-out">
+            <div class="max-w-lg mx-auto professional-card rounded-2xl p-12">
+                <div class="text-center mb-10">
+                    <div class="feature-icon mx-auto mb-6">👤</div>
+                    <h2 class="text-4xl font-bold section-header mb-4">Create Account</h2>
+                    <p class="text-professional text-lg">Join NearBuy and start smart shopping</p>
+                </div>
+                
+                <form onsubmit="registerUser(event)" class="space-y-6">
+                    <div>
+                        <label class="block text-gray-800 font-semibold mb-3 text-lg">Full Name</label>
+                        <input type="text" id="registerUserName" required 
+                               class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                               placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-800 font-semibold mb-3 text-lg">Email</label>
+                        <input type="email" id="registerUserEmail" required 
+                               class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                               placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label class="block text-gray-800 font-semibold mb-3 text-lg">Password</label>
+                        <input type="password" id="registerUserPassword" required 
+                               class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                               placeholder="Create password (min. 6 characters)">
+                    </div>
+                    <div>
+                        <label class="block text-gray-800 font-semibold mb-3 text-lg">Confirm Password</label>
+                        <input type="password" id="registerUserConfirmPassword" required 
+                               class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                               placeholder="Confirm your password">
+                    </div>
+                    <button type="submit" class="premium-button w-full px-8 py-4 text-white rounded-xl text-lg font-semibold mt-8">
+                        Create Account
+                    </button>
+                </form>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">
+                        Already have an account? 
+                        <button onclick="showUserLogin()" class="text-red-600 hover:text-red-800 font-semibold ml-1">
+                            Sign In
+                        </button>
+                    </p>
+                </div>
+                
+                <div class="mt-8 p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200">
+                    <h4 class="font-bold text-green-800 mb-2 text-center">✨ Benefits of Joining</h4>
+                    <ul class="text-green-700 text-sm space-y-1">
+                        <li>• Save your favorite products</li>
+                        <li>• Get personalized recommendations</li>
+                        <li>• Track your search history</li>
+                        <li>• Receive price drop alerts</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-        <form onsubmit="registerUser(event)" class="space-y-6">
-            <div>
-                <label class="block text-gray-800 font-semibold mb-3 text-lg">Full Name</label>
-                <input type="text" id="registerUserName" required 
-                       class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                       placeholder="Enter your full name">
-            </div>
-            <div>
-                <label class="block text-gray-800 font-semibold mb-3 text-lg">Email</label>
-                <input type="email" id="registerUserEmail" required 
-                       class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                       placeholder="Enter your email">
-            </div>
-            <div>
-                <label class="block text-gray-800 font-semibold mb-3 text-lg">Password</label>
-                <input type="password" id="registerUserPassword" required 
-                       class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                       placeholder="Create password (min. 6 characters)">
-            </div>
-            <div>
-                <label class="block text-gray-800 font-semibold mb-3 text-lg">Confirm Password</label>
-                <input type="password" id="registerUserConfirmPassword" required 
-                       class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                       placeholder="Confirm your password">
-            </div>
-            <button type="submit" class="premium-button w-full px-8 py-4 text-white rounded-xl text-lg font-semibold mt-8">
-                Create Account
-            </button>
-        </form>
-        
-        <div class="mt-8 text-center">
-            <p class="text-gray-600">
-                Already have an account? 
-                <button onclick="showUserLogin()" class="text-red-600 hover:text-red-800 font-semibold ml-1">
-                    Sign In
-                </button>
-            </p>
-        </div>
-        
-        <div class="mt-8 p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200">
-            <h4 class="font-bold text-green-800 mb-2 text-center">✨ Benefits of Joining</h4>
-            <ul class="text-green-700 text-sm space-y-1">
-                <li>• Save your favorite products</li>
-                <li>• Get personalized recommendations</li>
-                <li>• Track your search history</li>
-                <li>• Receive price drop alerts</li>
-            </ul>
-        </div>
-    </div>
-</div>
 
-<!-- Store Registration Page -->
-<div id="storeRegisterPage" class="hidden page-section py-16">
-    <div class="max-w-2xl mx-auto professional-card rounded-2xl p-12">
-        <div class="text-center mb-10">
-            <div class="feature-icon mx-auto mb-6">🏪</div>
-            <h2 class="text-4xl font-bold section-header mb-4">Register Your Store</h2>
-            <p class="text-professional text-lg">Join NearBuy as a store owner and reach more customers</p>
-        </div>
-        
-        <form onsubmit="registerStore(event)" class="space-y-6">
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="md:col-span-2">
-                    <label class="block text-gray-800 font-semibold mb-3 text-lg">Store Name *</label>
-                    <input type="text" id="registerStoreName" required 
-                           class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                           placeholder="Enter your store name">
+        <!-- Store Registration Page -->
+        <div id="storeRegisterPage" class="hidden page-section py-16 transition-opacity duration-300 ease-in-out">
+            <div class="max-w-2xl mx-auto professional-card rounded-2xl p-12">
+                <div class="text-center mb-10">
+                    <div class="feature-icon mx-auto mb-6">🏪</div>
+                    <h2 class="text-4xl font-bold section-header mb-4">Register Your Store</h2>
+                    <p class="text-professional text-lg">Join NearBuy as a store owner and reach more customers</p>
                 </div>
                 
-                <div>
-                    <label class="block text-gray-800 font-semibold mb-3 text-lg">Password *</label>
-                    <input type="password" id="registerStorePassword" required 
-                           class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                           placeholder="Create password (min. 6 characters)">
-                </div>
-                <div>
-                    <label class="block text-gray-800 font-semibold mb-3 text-lg">Confirm Password *</label>
-                    <input type="password" id="registerStoreConfirmPassword" required 
-                           class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                           placeholder="Confirm your password">
+                <form onsubmit="registerStore(event)" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2">
+                            <label class="block text-gray-800 font-semibold mb-3 text-lg">Store Name *</label>
+                            <input type="text" id="registerStoreName" required 
+                                   class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                                   placeholder="Enter your store name">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-800 font-semibold mb-3 text-lg">Password *</label>
+                            <input type="password" id="registerStorePassword" required 
+                                   class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                                   placeholder="Create password (min. 6 characters)">
+                        </div>
+                        <div>
+                            <label class="block text-gray-800 font-semibold mb-3 text-lg">Confirm Password *</label>
+                            <input type="password" id="registerStoreConfirmPassword" required 
+                                   class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                                   placeholder="Confirm your password">
+                        </div>
+                        
+                        <div class="md:col-span-2">
+                            <label class="block text-gray-800 font-semibold mb-3 text-lg">Store Address *</label>
+                            <input type="text" id="registerStoreAddress" required 
+                                   class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                                   placeholder="e.g., 123 Rizal Street, Barangay San Francisco">
+                        </div>
+                        
+                        <div class="md:col-span-2">
+                            <label class="block text-gray-800 font-semibold mb-3 text-lg">Barangay/Location *</label>
+                            <input type="text" id="registerStoreLocation" required 
+                                   class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                                   placeholder="e.g., Barangay San Francisco, Pagadian City">
+                        </div>
+                        
+                        <div class="md:col-span-2">
+                            <label class="block text-gray-800 font-semibold mb-3 text-lg">Operating Hours</label>
+                            <input type="text" id="registerStoreHours" 
+                                   class="professional-input w-full px-6 py-4 rounded-xl text-lg"
+                                   placeholder="e.g., 6:00 AM - 10:00 PM (optional)">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="premium-button w-full px-8 py-4 text-white rounded-xl text-lg font-semibold mt-8">
+                        Register Store
+                    </button>
+                </form>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">
+                        Already have a store account? 
+                        <button onclick="showStoreOwnerLogin()" class="text-red-600 hover:text-red-800 font-semibold ml-1">
+                            Store Login
+                        </button>
+                    </p>
                 </div>
                 
-                <div class="md:col-span-2">
-                    <label class="block text-gray-800 font-semibold mb-3 text-lg">Store Address *</label>
-                    <input type="text" id="registerStoreAddress" required 
-                           class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                           placeholder="e.g., 123 Rizal Street, Barangay San Francisco">
-                </div>
-                
-                <div class="md:col-span-2">
-                    <label class="block text-gray-800 font-semibold mb-3 text-lg">Barangay/Location *</label>
-                    <input type="text" id="registerStoreLocation" required 
-                           class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                           placeholder="e.g., Barangay San Francisco, Pagadian City">
-                </div>
-                
-                <div class="md:col-span-2">
-                    <label class="block text-gray-800 font-semibold mb-3 text-lg">Operating Hours</label>
-                    <input type="text" id="registerStoreHours" 
-                           class="professional-input w-full px-6 py-4 rounded-xl text-lg"
-                           placeholder="e.g., 6:00 AM - 10:00 PM (optional)">
+                <div class="mt-8 p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200">
+                    <h4 class="font-bold text-blue-800 mb-2 text-center">🚀 Store Owner Benefits</h4>
+                    <ul class="text-blue-700 text-sm space-y-1">
+                        <li>• Reach local customers in your area</li>
+                        <li>• Free store listing and product management</li>
+                        <li>• Analytics and sales insights</li>
+                        <li>• Increase store visibility</li>
+                        <li>• Easy inventory management</li>
+                    </ul>
                 </div>
             </div>
-            
-            <button type="submit" class="premium-button w-full px-8 py-4 text-white rounded-xl text-lg font-semibold mt-8">
-                Register Store
-            </button>
-        </form>
-        
-        <div class="mt-8 text-center">
-            <p class="text-gray-600">
-                Already have a store account? 
-                <button onclick="showStoreOwnerLogin()" class="text-red-600 hover:text-red-800 font-semibold ml-1">
-                    Store Login
-                </button>
-            </p>
         </div>
-        
-        <div class="mt-8 p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200">
-            <h4 class="font-bold text-blue-800 mb-2 text-center">🚀 Store Owner Benefits</h4>
-            <ul class="text-blue-700 text-sm space-y-1">
-                <li>• Reach local customers in your area</li>
-                <li>• Free store listing and product management</li>
-                <li>• Analytics and sales insights</li>
-                <li>• Increase store visibility</li>
-                <li>• Easy inventory management</li>
-            </ul>
-        </div>
-    </div>
-</div>
 
         <!-- Admin Dashboard -->
-        <div id="adminDashboard" class="hidden page-section py-12">
+        <div id="adminDashboard" class="hidden page-section py-12 transition-opacity duration-300 ease-in-out">
             <div class="professional-card rounded-2xl p-12">
                 <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-12 space-y-4 lg:space-y-0">
                     <div>
@@ -569,8 +569,8 @@
             </div>
         </div>
 
-        <!-- store owner dashboard-->
-        <div id="storeOwnerDashboard" class="hidden page-section py-12">
+        <!-- Store Owner Dashboard -->
+        <div id="storeOwnerDashboard" class="hidden page-section py-12 transition-opacity duration-300 ease-in-out">
             <div class="professional-card rounded-2xl p-12">
                 <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-12 space-y-4 lg:space-y-0">
                     <div>
@@ -586,7 +586,7 @@
                     </div>
                 </div>
 
-                <!--store analytics-->
+                <!-- Store Analytics -->
                 <div class="grid md:grid-cols-4 gap-6 mb-12">
                     <div class="stats-card">
                         <div class="flex items-center justify-between">
@@ -737,14 +737,12 @@
                         
                         <div class="grid md:grid-cols-2 gap-4">
                             <div>
-                                
-                            </div>
-                            <div>
                                 <label class="block text-gray-700 font-medium mb-2">Operating Hours</label>
                                 <input type="text" id="storeHours" required 
                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 shadow-sm"
                                        placeholder="e.g., 6:00 AM - 10:00 PM">
                             </div>
+                            <div></div>
                         </div>
                         
                         <div class="grid md:grid-cols-2 gap-4">
@@ -773,7 +771,7 @@
         </div>
 
         <!-- Store Owner Login -->
-        <div id="storeOwnerLogin" class="hidden page-section py-16">
+        <div id="storeOwnerLogin" class="hidden page-section py-16 transition-opacity duration-300 ease-in-out">
             <div class="max-w-lg mx-auto professional-card rounded-2xl p-12">
                 <div class="text-center mb-10">
                     <div class="feature-icon mx-auto mb-6">🏪</div>
@@ -807,7 +805,7 @@
         </div>
 
         <!-- About Page -->
-        <div id="aboutPage" class="hidden page-section py-12">
+        <div id="aboutPage" class="hidden page-section py-12 transition-opacity duration-300 ease-in-out">
             <div class="professional-card rounded-2xl p-12">
                 <div class="text-center mb-12">
                     <div class="feature-icon mx-auto mb-6">📋</div>
@@ -873,40 +871,40 @@
     </div>
 
     <!-- Map Modal -->
-<div id="mapModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm" onclick="closeMapModal()"></div>
-    
-    <!-- Modal Content -->
-    <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-md w-full max-h-[90vh] overflow-y-auto relative z-10">
-        <div class="flex justify-between items-center mb-6">
-            <h3 class="text-2xl font-bold text-gray-800">📍 Store Location</h3>
-            <button onclick="closeMapModal()" class="text-gray-500 hover:text-gray-700 text-2xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-all duration-200">
-                &times;
-            </button>
-        </div>
+    <div id="mapModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 transition-opacity duration-300 ease-in-out">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm" onclick="closeMapModal()"></div>
         
-        <div id="storeDetails" class="space-y-3 mb-6 p-4 bg-gray-50 rounded-lg"></div>
-        
-        <div id="map" class="h-64 mb-4 rounded-xl border-2 border-gray-200"></div>
-        
-        <div id="directions" class="space-y-2 mb-4 text-sm text-gray-700 bg-blue-50 p-3 rounded-lg"></div>
-        
-        <div class="flex flex-col sm:flex-row gap-3 justify-center mt-6">
-            <button id="getDirectionsBtn" onclick="getDirections()" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all font-semibold">
-                🧭 Get Directions
-            </button>
-            <button id="clearDirectionsBtn" onclick="clearDirections()" class="px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all font-semibold hidden">
-                🗑️ Clear Route
-            </button>
-            <button onclick="closeMapModal()" class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-all font-semibold">
-                Close
-            </button>
+        <!-- Modal Content -->
+        <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-md w-full max-h-[90vh] overflow-y-auto relative z-10">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-800">📍 Store Location</h3>
+                <button onclick="closeMapModal()" class="text-gray-500 hover:text-gray-700 text-2xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-all duration-200">
+                    &times;
+                </button>
+            </div>
+            
+            <div id="storeDetails" class="space-y-3 mb-6 p-4 bg-gray-50 rounded-lg"></div>
+            
+            <div id="map" class="h-64 mb-4 rounded-xl border-2 border-gray-200"></div>
+            
+            <div id="directions" class="space-y-2 mb-4 text-sm text-gray-700 bg-blue-50 p-3 rounded-lg"></div>
+            
+            <div class="flex flex-col sm:flex-row gap-3 justify-center mt-6">
+                <button id="getDirectionsBtn" onclick="getDirections()" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all font-semibold">
+                    🧭 Get Directions
+                </button>
+                <button id="clearDirectionsBtn" onclick="clearDirections()" class="px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all font-semibold hidden">
+                    🗑️ Clear Route
+                </button>
+                <button onclick="closeMapModal()" class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-all font-semibold">
+                    Close
+                </button>
+            </div>
         </div>
     </div>
-</div>
+
 
     <script src="script.js?v=2"></script>
-
 </body>
 </html>
