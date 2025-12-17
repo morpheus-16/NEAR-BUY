@@ -1,11 +1,11 @@
 <?php
-// db.php
-// Single place for DB connection. Keep this included at top of API files.
+// db.php – InfinityFree connection
 
 $DB_HOST = 'localhost';
 $DB_USER = 'root';      // change if needed
 $DB_PASS = '';          // change to your password
 $DB_NAME = 'nearbuy';
+
 
 $mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 
